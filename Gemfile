@@ -58,5 +58,10 @@ group :test do
   gem 'chromedriver-helper'
 end
 
+#画像組み込み/アップロード先の設定
+gem "refile", require: "refile/rails", github: 'manfe/refile'
+#画像リサイズ
+gem "refile-mini_magick"
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
